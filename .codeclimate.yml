@@ -1,18 +1,9 @@
----
-engines:
-  duplication:
+version: "2"
+plugins:
+  structure:
     enabled: true
-    config:
-      languages:
-      - python
-  fixme:
-    enabled: true
-  radon:
-    enabled: true
-ratings:
-  paths:
-  - "**.py"
-exclude_paths:
+    channel: beta
+exclude_patterns:
 - tests/
 - vendor/
 - run_acs.py
